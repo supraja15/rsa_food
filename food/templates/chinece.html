@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RSA Food</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="alert alert-danger" role="alert">
+        <h1 align=center>RSA FOOD</h1>
+        <h2 align=center><i>Home Made Products</i></h2>
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+           <a href="{% url 'home' %}">HOME</a>
+           <a href="{% url 'about' %}">ABOUT US</a>
+           <a href="#">NOTIFICATIONS</a>
+           <a href="#">UPDATES</a>
+           <u><b><a href="{% url 'temp1' %}">Logout</a></b></u>
+          </nav>
+      </div>
+      <marquee direction="right"><h1 style="color:red;"><i>Welcome to RSA Food</i></h1></marquee>
+      <div>
+            <h3 style="color:blue;" align=center><u>Chinese Food</u></h3>
+            <table cellpadding=50px"><tr>
+                <td><img src="{% static 'images/spring rolls.png' %}" alt="image not found" width="300px" height="250px">
+                <h3><a href="#">Rools price:60Rs.</a> </h3></td>
+                <td><img src="{% static 'images/dim stums.png' %}" alt="Image not found" width="300px" height="250px">
+                <h3><a href="#"> Stums Price:150Rs.</a></h3></td>
+                <td><img src="{% static 'images/veg hakka noodles.png' %}" alt="image not found" width="300px" height="250px">
+                <h3><a href="#"> Hakka Noodles Price:100Rs.</a></h3></td>
+                </tr>
+        </table>
+          </div>
+          <div>
+                <h3 align=center style="color:white;"><button type="button" class="btn btn-secondary btn-lg" align=center><a href="{% url 'final' %}"><h4 style="color:white;">Buy Now</h4></a></button>
+                <button type="button" class="btn btn-secondary btn-lg" align=center>Add Cart</button></h3>
+              </div>
+          
+    </body>
+    </html>
