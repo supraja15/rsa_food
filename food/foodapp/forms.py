@@ -1,6 +1,6 @@
 from django import forms
 from foodapp.models import *
-
+#form creation
 class Form_name(forms.Form):
     name=forms.CharField(max_length=100,label="Name : ")
     emailId=forms.EmailField(max_length=40,required=True)
