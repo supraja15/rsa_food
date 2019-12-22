@@ -1,6 +1,6 @@
 from django.urls import path,re_path
 from foodapp import views
-
+#url mapping
 app_name="foodapp"
 
 urlpatterns = [
