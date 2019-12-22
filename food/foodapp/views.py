@@ -7,6 +7,7 @@ from . import forms
 from foodapp.models import *
 from django.urls import reverse_lazy,reverse
 # Create your views here.
+#Function based and class based views.
 def home(request):
     return render(request,'home.html')
 def login(request):
